@@ -24,13 +24,17 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
-
+        player.update(dt) # updating the objects?
+        
+# drawings
         screen.fill("black")
 
         player.draw(screen)
 
         pygame.display.flip()
 
+
+# calculate dt
         dt = clock.tick(60) / 1000
 
 
